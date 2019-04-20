@@ -1,0 +1,11 @@
+﻿.main-body{
+    max-width:1020px;
+    width:100%;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+}
+.snap-img{
+    max-width:800px;
+    width:100%;
+}

@@ -1,0 +1,68 @@
+﻿.image-box{
+    text-align:center;
+}
+.prod-img{
+    width: 100%;
+    max-width: 205px;
+    text-align:center;
+}
+.img-url-div{
+    margin: 8px auto auto auto;
+    text-align:center;
+    align-content:center;
+}
+.img-url-inp{
+    margin: auto auto auto auto;
+    padding-left:2px;
+    width:400px;
+}
+
+.img-url-btn{
+    padding-left:10px;
+    margin-left:5px;
+}
+.title-div{
+}
+.usr-inp{
+    margin-left:40px;
+    min-width: 200px;
+    max-width:400px;
+}
+.usr-inp1{
+    margin-left:40px;
+    width: 200px;
+}
+.usr-inp1{
+    margin-left:40px;
+    min-width: 200px;
+    max-width:300px;
+}
+.grp-holder{
+    margin-top:15px;
+}
+.usrmsg-hide{
+    visibility:hidden;
+
+}
+.usrmsg-show{
+    visibility:visible;
+    color:red;
+    text-align:center;
+
+}
+.center-block{
+    text-align:center;
+    font:x-large;
+}
+.sub-prod-btn{
+    margin-top:12px;
+}
+.red-text{
+    color:red;
+}
+.add-filed-btn{
+    margin:auto auto auto auto;
+}
+.dollar-symbol{
+    height:19px;
+}

@@ -1,0 +1,47 @@
+﻿body{
+    text-align:center;
+}
+.pageContent{
+
+}
+.login-elements{
+    margin-left:5px;
+    max-width:250px;
+}
+
+.login-btn{
+    align-content:center;
+    text-align:center;
+}
+.login-element-btn{
+    margin-left:5px;
+    max-width:260px;
+}
+.registerctrl{
+    max-width:350px;
+    position: relative;
+    padding: 5px 20px 12px 20px;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.loginctrl {
+    max-width:350px;
+    position: relative;
+    margin: auto;
+    padding: 5px 20px 12px 20px;
+    border-radius: 10px;
+    background: #fff;
+}
+.info-box{
+    margin-top:25px;
+}
+
+.vr{
+    margin-left:20px;
+    float:left;
+    border-left:1px solid #000;
+    height:350px;
+}
+
+

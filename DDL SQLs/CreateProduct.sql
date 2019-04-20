@@ -1,0 +1,20 @@
+﻿CREATE TABLE [dbo].[product] (
+    [productId]   BIGINT        NOT NULL,
+    [title]       VARCHAR (30)  NOT NULL,
+    [imgnm]       VARCHAR (30)  NOT NULL,
+    [category]    VARCHAR (30)  NOT NULL,
+    [subCategory] VARCHAR (30)  NOT NULL,
+    [desc]        VARCHAR (500) NOT NULL,
+    [specs]       VARCHAR (500) NOT NULL,
+    [price]       FLOAT (53)    NOT NULL,
+    [condition]   CHAR (4)      NOT NULL,
+    [sellerId]    VARCHAR (20)  NOT NULL,
+    [quant]       INT           NOT NULL,
+    [sold]        INT           NOT NULL,
+    [avail]       CHAR (1)      NOT NULL,
+    [time]        DATETIME      CONSTRAINT [CreateTS_DF] DEFAULT (getdate()) NOT NULL,
+    PRIMARY KEY CLUSTERED ([productId] ASC),
+    CONSTRAINT [FK_product_User] FOREIGN KEY ([sellerId]) REFERENCES [dbo].[user] ([userId]),
+    CONSTRAINT [CK_product_condition] CHECK ([condition]='new' OR [condition]='used'),
+    CONSTRAINT [CK_product_avail] CHECK ([avail]='Y' OR [avail]='N')
+);

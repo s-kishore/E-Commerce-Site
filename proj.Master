@@ -1,0 +1,170 @@
+﻿<%@ Master Language="C#" %>
+<%@ Import Namespace="System" %>
+<%@ Import Namespace="System.Collections.Generic" %>
+<%@ Import Namespace="System.Linq" %>
+<%@ Import Namespace="System.Web" %>
+<%@ Import Namespace="System.Web.UI" %>
+<%@ Import Namespace="System.Web.UI.WebControls" %>
+<%@ Import Namespace="dbproj.DAOs" %>
+<%@ Import Namespace="System.IO" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="CSS/bootstrap.css" /> 
+    <link rel="stylesheet" href="CSS/master.css" />
+    <script type="text/javascript" src="JS/jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="JS/bootstrap.js"></script>
+    <script type="text/javascript" src="JS/master.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+</head>
+<body runat="server">
+    <form id="form1" runat="server" class="main-form">
+        <div class="container center-block">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="default.aspx"> E-Mart </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="default.aspx"> Home <span class="sr-only">(current)</span></a></li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Product Catogories <span class="caret"></span></a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="search.aspx?cat=camera"> Cameras & Camcorders</a></li>
+                        <li class="divider"></li>
+                        <li><a href="search.aspx?cat=car"> Car Electronics & GPS</a></li>
+                        <li class="divider"></li>
+                        <li><a href="search.aspx?cat=cell"> Cell Phones & Accessories</a></li>
+                        <li class="divider"></li>
+                          <li><a href="search.aspx?cat=computer"> Computers & Tablets </a></li>
+                          <li class="divider"></li>
+                        <li><a href="search.aspx?cat=tv"> TV, Audio & Surveillance </a></li>
+                      </ul>
+                    </li>
+                    <li> <a id="sellbutton" href="sell.aspx" runat="server"> Sell Product </a></li>
+                </ul>
+                  <ul class="nav navbar-nav navbar-right">
+                    <li> <a id="myprofile" class="profile-lnk" runat="server"> My Profile </a> </li>
+                    <li><asp:Button ID="loginout" CssClass="btn btn-default signout-btn" runat="server" /></li>
+                    <li><a href="cart.aspx"> View Cart <span class="sr-only">(current)</span></a></li>
+                    <li></li>
+                  </ul>
+              <div class="navbar-form" role="search">
+                <div class="form-group">
+                  <asp:TextBox runat="server" ID="searchq" AutoCompleteType="Search" CssClass="form-control searchbar" placeholder="Search products" > </asp:TextBox>
+                </div>
+                  <asp:Button runat="server" ID="searchbtn" OnClick="searchbtn_Click" Text="Search" CssClass="btn btn-default" />
+              </div>
+
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+        </div>
+        <!----------------------------------------------------------------------------------------------------------------------------------------------->
+        
+    <asp:ContentPlaceHolder ID="pageContent" runat="server" />
+     <br />
+        
+        <div class="footer-content">
+        <div class="footer-content align-left">
+            <div class="footer-links">
+                <a href="docs.aspx"> Site Docs </a>
+                <br />
+                <a href="mailto:selvan.k@husky.neu.edu?Subject=From%20E-%20Mart%20Site"> Contact Us</a>
+            </div>
+            <div class="footer-desc">
+                This is site is done as a project work for the course CS5200
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
+
+<script runat="server">
+    string logedinusr;
+    UserVO curruser;
+    protected void Page_Load(object sender, EventArgs e)
+    {
+
+        if (Session["curruser"] == null)
+        {
+            renderUserSpecifics(false);
+        }
+        else
+        {
+            curruser = (UserVO)Session["curruser"];
+            logedinusr = curruser.userid.Replace(" ", "");
+            renderUserSpecifics(true);
+        }
+    }
+
+    private void renderUserSpecifics(bool userexists)
+    {
+        StringWriter stringWriter = new StringWriter();
+        HtmlTextWriter createbutton = new HtmlTextWriter(stringWriter);
+
+        if (userexists)
+        {
+            myprofile.Attributes.Add("class", "profile-lnk show-elements");
+            myprofile.HRef = "profile.aspx?p=" + curruser.userid;
+            loginout.Click += new EventHandler(this.logout_Click);
+            loginout.CssClass = "signout-btn";
+        }
+        else
+        {
+            myprofile.Attributes.Add("class", "hide-elements");
+            loginout.Click += new EventHandler(this.redirectToPage);
+            loginout.CssClass = "signin-btn";
+        }
+    }
+
+
+    protected void logout_Click(object sender, EventArgs e)
+    {
+        HttpContext.Current.Session.Clear();
+        HttpContext.Current.Session.Abandon();
+        HttpContext.Current.User = null;
+        Response.Redirect(Request.RawUrl);
+    }
+
+    protected void redirectToPage(object sender, EventArgs e)
+    {
+        Button clickedbutton = (Button)sender;
+        string buttonid = clickedbutton.ID;
+            Response.Redirect("login.aspx");
+    }
+
+    protected void searchbtn_Click(object sender, EventArgs e)
+    {
+        string searchstring = searchq.Text;
+        //Regex validexp = new Regex("[^A-Za-z0-9\x20]");
+        //bool isstringvalid = validexp.IsMatch(searchstring);
+        //&& !isstringvalid
+        if (!string.IsNullOrWhiteSpace(searchstring) )
+        {
+            searchstring = searchstring.Replace(" ", "+");
+            Response.Redirect("search.aspx?q=" + searchstring);
+        }
+        else
+        {
+            // Display information window
+        }
+    }
+
+</script>

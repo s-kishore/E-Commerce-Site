@@ -1,0 +1,41 @@
+﻿.no-data-div{
+    text-align:center;
+}
+.prod-img{
+    align-self:center;
+    max-height:100px;
+    max-width:66px;
+    padding-bottom:5px;
+}
+.prod-title{
+    font-size:larger;
+    font-weight:bold;
+}
+.prod-dtls-cnt{
+    padding-left:8px;
+}
+.grid-tbl{
+    border:hidden
+}
+.prod-img-col {
+    text-align: center;
+    align-content: center;
+}
+td {
+    border:none;
+    
+    max-height:120px;
+}
+tr{
+    text-align:center;
+    border-bottom:groove;
+    padding-top:5px;
+    padding-bottom:5px;
+    max-height:90px;
+    min-height:80px;
+}
+th{
+    text-align:center;
+    border:none;
+    max-height:30px;
+}

@@ -1,0 +1,14 @@
+C:\Users\Krish\OneDrive\My Work\VS Workspace\dbproj\emart\bin\Debug\emartDB.dacpac
+C:\Users\Krish\OneDrive\My Work\VS Workspace\dbproj\emart\bin\Debug\emart.dll
+C:\Users\Krish\OneDrive\My Work\VS Workspace\dbproj\emart\bin\Debug\emart.pdb
+C:\Users\Krish\OneDrive\My Work\VS Workspace\dbproj\emart\obj\Debug\Model.xml
+C:\Users\Krish\OneDrive\My Work\VS Workspace\dbproj\emart\obj\Debug\refactor.xml
+C:\Users\Krish\OneDrive\My Work\VS Workspace\dbproj\emart\obj\Debug\postdeploy.sql
+C:\Users\Krish\OneDrive\My Work\VS Workspace\dbproj\emart\obj\Debug\predeploy.sql
+C:\Users\Krish\OneDrive\My Work\VS Workspace\dbproj\emart\obj\Debug\emart.dll
+C:\Users\Krish\OneDrive\My Work\VS Workspace\dbproj\emart\obj\Debug\emart.pdb
+C:\Users\Krish\OneDrive\My Work\VS Workspace\emart\bin\Debug\emartDB.dacpac
+C:\Users\Krish\OneDrive\My Work\VS Workspace\emart\bin\Debug\emart.dll
+C:\Users\Krish\OneDrive\My Work\VS Workspace\emart\bin\Debug\emart.pdb
+C:\Users\Krish\OneDrive\My Work\VS Workspace\emart\obj\Debug\emart.dll
+C:\Users\Krish\OneDrive\My Work\VS Workspace\emart\obj\Debug\emart.pdb

@@ -1,0 +1,9 @@
+C:\Users\Krish\OneDrive\My Work\VS Workspace\dbproj\emart\bin\Release\emartDB.dacpac
+C:\Users\Krish\OneDrive\My Work\VS Workspace\dbproj\emart\bin\Release\emart.dll
+C:\Users\Krish\OneDrive\My Work\VS Workspace\dbproj\emart\bin\Release\emart.pdb
+C:\Users\Krish\OneDrive\My Work\VS Workspace\dbproj\emart\obj\Release\Model.xml
+C:\Users\Krish\OneDrive\My Work\VS Workspace\dbproj\emart\obj\Release\refactor.xml
+C:\Users\Krish\OneDrive\My Work\VS Workspace\dbproj\emart\obj\Release\postdeploy.sql
+C:\Users\Krish\OneDrive\My Work\VS Workspace\dbproj\emart\obj\Release\predeploy.sql
+C:\Users\Krish\OneDrive\My Work\VS Workspace\dbproj\emart\obj\Release\emart.dll
+C:\Users\Krish\OneDrive\My Work\VS Workspace\dbproj\emart\obj\Release\emart.pdb

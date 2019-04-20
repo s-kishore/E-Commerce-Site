@@ -1,0 +1,85 @@
+﻿.empty-box
+{
+    text-align:center;
+}
+.shpp-mthd{
+  float:left;
+  margin-left: 40px;
+}
+.sub-tot-dsp{
+   float:right;
+   margin-top: 12px;
+}
+.sbt-tot-amt{
+ 
+}
+.tot-dsp{
+    clear:both;
+    float:right;
+}
+.cart-tbl-pimg{
+    align-content:center;
+    text-align:center;
+    align-items:center;
+    padding-bottom:5px;
+}
+.cart-tbl-pimg{
+    align-self:center;
+    max-height:90px;
+    max-width:100px;
+    padding-bottom:5px;
+}
+.cart-tbl-itm{
+    width:40%;
+    max-width:400px;
+}
+.carttbl-hd-quan{
+    width: 15px;
+    align-content:center;
+    text-align:center;
+}
+.carttbl-hd-price{
+    width:50px;
+    text-align:right;
+}
+.carttbl-hd-subtot{
+    text-align:center;
+    width:75px;
+}
+.cart-tbl-pavail{
+    width:160px;
+}
+.carttbl{
+  table-layout:fixed;
+}
+.carttbl :nth-child(2){
+    text-align:center;
+}
+.carttbl :nth-child(3){
+    text-align:center;
+    width:53px;
+}
+.carttbl :nth-child(4){
+text-align: center;
+width: 109px;
+padding-left: 30px;
+}
+.carttbl :nth-child(5){
+    text-align:center;
+    width: 100px;
+}
+.carttbl :nth-child(6){
+    text-align:center;
+    width:135px;
+}
+.center-box{
+    clear:both;
+    text-align:center;
+}
+.checkout-btn{
+    margin-top:30px;
+}
+.shpp-addr{
+  float:left;
+  margin-left: 40px;
+}

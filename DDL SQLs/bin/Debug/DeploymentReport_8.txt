@@ -1,0 +1,37 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[product]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The type for column avail in table [dbo].[product] is currently  CHAR (5) NOT NULL but is being changed to  CHAR (1) NOT
+         NULL. Data loss could occur.
+
+** User actions
+     Drop
+       [dbo].[CK_product_avail] (Check Constraint)
+     Table rebuild
+       [dbo].[product] (Table)
+     Alter
+       [dbo].[purchase] (Table)
+       [dbo].[review] (Table)
+     Create
+       [dbo].[CK_product_avail] (Check Constraint)
+
+** Supporting actions
+     Drop
+       [dbo].[FK_purchaseDetail_To_Product] (Foreign Key)
+       [dbo].[FK_review_Product] (Foreign Key)
+       [dbo].[FK_product_User] (Foreign Key)
+       [dbo].[FK_like_Product] (Foreign Key)
+     Create
+       [dbo].[FK_purchaseDetail_To_Product] (Foreign Key)
+       [dbo].[FK_review_Product] (Foreign Key)
+       [dbo].[FK_product_User] (Foreign Key)
+       [dbo].[FK_like_Product] (Foreign Key)
+       [dbo].[CK_product_condition] (Check Constraint)
+
+The type for column avail in table [dbo].[product] is currently  CHAR (5) NOT NULL but is being changed to  CHAR (1) NOT NULL. Data loss could occur.
+

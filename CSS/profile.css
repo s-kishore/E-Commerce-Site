@@ -1,0 +1,38 @@
+﻿.updt-btn-row{
+    text-align:center;
+}
+.updt-btn{
+    margin-top:9px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.usr-data-tbl{
+    
+    padding:5px 5px 5px 5px;
+}
+.img-row{
+    min-width:150px;
+    align-content:flex-start;
+    text-align:left;
+}
+.coll-3{
+    align-content:center;
+    align-items:center;
+    text-align:center;
+    width:280px;
+}
+.coll-1{
+    text-align:left;
+    font-family:'Times New Roman', Times, serif;
+    min-width:90px;
+}
+.coll-2{
+    min-width:200px;
+}
+.edt-elements{
+    visibility:hidden;
+}
+.follow-btn-box{
+    text-align:center;
+    margin:auto auto 12px auto;
+}

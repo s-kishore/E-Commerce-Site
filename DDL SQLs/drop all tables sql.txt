@@ -1,0 +1,37 @@
+INSERT INTO [dbo].[user] ([userId], [pass], [imgid], [firstName], [lastName], [email], [streetAddress], [zip]) VALUES (N'krish', N'password', N'1', N'Kishore', N'S', N'selvan.k@husky.neu.edu', NULL, N'02067')
+
+update [user] set streetAddress ='8 Sumac Lane' where userId = 'krish'
+
+SELECT *
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_NAME = N'user'
+
+
+sp_RENAME 'user.[street address 1]' , 'streetAddress', 'COLUMN'
+
+SELECT * FROM information_schema.tables
+
+
+GO
+DROP TABLE [LIKE]
+
+GO
+DROP TABLE [FOLLOWER]
+
+GO
+DROP TABLE [REVIEW]
+
+GO
+DROP TABLE [PURCHASEDETAILS]
+
+GO 
+DROP TABLE [PURCHASE];
+
+GO
+DROP TABLE [PRODUCT]
+
+GO
+DROP TABLE [user];
+
+GO 
+DROP TABLE [zip];

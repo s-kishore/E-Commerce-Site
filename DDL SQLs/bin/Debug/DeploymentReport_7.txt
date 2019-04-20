@@ -1,0 +1,24 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[zip]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Alter
+       [dbo].[purchase] (Table)
+       [dbo].[user] (Table)
+     Table rebuild
+       [dbo].[zip] (Table)
+
+** Supporting actions
+     Drop
+       [dbo].[FK_purchase_To_zip] (Foreign Key)
+       [dbo].[FK_users_To_zip] (Foreign Key)
+     Create
+       [dbo].[FK_purchase_To_zip] (Foreign Key)
+       [dbo].[FK_users_To_zip] (Foreign Key)

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="dbproj.DAOs.FollowerVO">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAgAAAACAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Code\DAOs\FollowerVO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="dbproj.DAOs.LikeVO">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAIABAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Code\DAOs\LikeVO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="dbproj.DAOs.ReviewVO">
+    <Position X="2.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAIABAAAAAAAgQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Code\DAOs\ReviewVO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="dbproj.DAOs.PurchaseVO">
+    <Position X="0.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAkAAAAAAAQAAAAA=</HashCode>
+      <FileName>App_Code\DAOs\PurchaseVO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="dbproj.DAOs.ProductVO">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQFAIAAQAAAAAgBBAAAAAAACACQAQBAIAAIAAAAAAA=</HashCode>
+      <FileName>App_Code\DAOs\ProductVO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="dbproj.DAOs.UserVO">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQQAAAAACAABAAgBAAAAAAAAAAAAAAAIAAAAgAAAAA=</HashCode>
+      <FileName>App_Code\DAOs\UserVO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

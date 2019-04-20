@@ -1,0 +1,38 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[follower] (Table)
+       [dbo].[like] (Table)
+       [dbo].[product] (Table)
+       [dbo].[purchase] (Table)
+       [dbo].[purchaseDetail] (Table)
+       [dbo].[review] (Table)
+       [dbo].[user] (Table)
+       [dbo].[zip] (Table)
+       [dbo].[FK_follower_user1] (Foreign Key)
+       [dbo].[FK_follower_user2] (Foreign Key)
+       [dbo].[FK_like_Product] (Foreign Key)
+       [dbo].[FK_like_User] (Foreign Key)
+       [dbo].[FK_product_User] (Foreign Key)
+       [dbo].[FK_purchase_To_zip] (Foreign Key)
+       [dbo].[FK_purchase_To_user] (Foreign Key)
+       [dbo].[FK_purchaseDetail_To_purchase] (Foreign Key)
+       [dbo].[FK_purchaseDetail_To_Product] (Foreign Key)
+       [dbo].[FK_review_User] (Foreign Key)
+       [dbo].[FK_review_Product] (Foreign Key)
+       [dbo].[FK_users_To_zip] (Foreign Key)
+       [dbo].[CK_product_avail] (Check Constraint)
+       [dbo].[CK_product_condition] (Check Constraint)
+       [dbo].[CK_review_Rating] (Check Constraint)
+       [dbo].[CK_review_Entry] (Check Constraint)
+
+** Supporting actions
